@@ -1,0 +1,92 @@
+form{
+    display: flex;
+    gap:2%;
+    width:58%;
+    margin: 6rem 20% 4rem;
+  }
+  
+  input,button{
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input{
+    width: 88%;
+    outline: none;
+    color:black;
+    font-size: 0.8rem;
+  }
+  
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+  
+  button{
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #search{
+    width: 100%;
+    height: 1rem;
+  }
+  #search:hover {
+    fill: #22c1c3;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #greet,#error_message{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    width: 70%;
+    margin: 0 15%;
+  }
+  
+  .output {
+    display: none;
+    justify-content: center;
+    gap:2%;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+    color: #22c1c3;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+  }
+  
+  .weather-info{
+    width: 20%;
+  }
+  
+  .weather-info p{
+    font-size: 0.4rem;
+  }
+  
+  .weather-details{
+    width: 30%;
+  }
+  
+  #weatherIcon{
+    width: 5rem;
+  }
+
+  @media (max-width: 700px) {
+    form {
+      width: 68%;
+      margin: 6rem 15% 4rem;
+    }
+  }

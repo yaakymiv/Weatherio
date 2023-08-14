@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      {{>header}}
+      <form>
+        <input type="text" placeholder="Location / index" />
+        <button><svg
+            id="search"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          ><style>svg{fill:#c0bfbf}</style><path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            /></svg></button>
+      </form>
+
+    </div>
+
+<h3 id="error_message"></h3>
+
+<h4 id="greet">Welcome! <br>
+ Please enter your location or postal code to receive comprehensive 
+  weather details, including UV index, humidity levels, and more</h4>
+
+    <div class="output">
+      <section class="weather-info">
+        <img id="weatherIcon">
+        <h2 id="temp"></h2>
+      <p>P.S. Those PNGs look like shit. Nevertheless,thank u API! There was no way I was going to look for "Moderate or heavy
+         showers of ice pellets" icon myself</p>
+      </section>
+      <section class="weather-details">
+        <h3 id="loc"></h3>
+        <h4 id="condition"></h4>
+        <p id="humidity"></p>
+        <p id="uv"></p>
+        <p id="wind"></p>
+      </section>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+  </body>
+</html>

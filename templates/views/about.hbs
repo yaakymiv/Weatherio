@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      {{>header}}
+      <div class="about">
+        <div class="topic" id="topic1">
+          <h3>Weather Forecast Project</h3>
+          <p>This project has been crafted using the trio of HTML, CSS, and
+            JavaScript without relying
+            <br />
+            on external frameworks. Node.js was integrated to handle data
+            fetching and manage backend operations.</p>
+        </div>
+        <div class="topic">
+          <h3>A Trusted Source of Data</h3>
+          <p>Weather predictions are driven by accurate and up-to-the-minute
+            data sourced from the reputable API provided by
+            <a href="https://www.weatherapi.com/">WeatherApi</a>.</p>
+        </div>
+        <div class="topic">
+          <h3>Abilities</h3>
+          <p>Project was crated to inform about temperature fluctuations, UV
+            indexes, humidity levels and wind speeds all around the globe.</p>
+        </div>
+      </div>
+
+      {{>footer}}
+    </div>
+
+  </body>
+</html>

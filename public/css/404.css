@@ -1,0 +1,54 @@
+/* Reset some default margin and padding */
+body,
+h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* This ensures that the body takes up at least the full viewport height,
+   even if the content is not enough to fill the screen.*/
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+
+.body_404 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

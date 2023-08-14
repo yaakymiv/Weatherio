@@ -1,0 +1,102 @@
+html {
+  font-size: x-large;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h3,
+h4,
+p,
+a ,input{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #22c1c3;
+  transition: 0.5s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(250, 215, 35, 1) 87%,
+    rgba(250, 215, 35, 1) 100%
+  );
+}
+
+.main {
+  margin: 3rem 6rem 0;
+}
+
+h1,h3 {
+  font-weight: 500;
+}
+
+.logo{
+  display: flex;
+  gap: 0.2rem;
+}
+
+.logo img{
+  width: 2rem;
+}
+
+.head_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_bar {
+  flex-shrink: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+#Footer{
+  margin: 2rem 0 1rem;
+  font-size: 0.7rem;
+  color: #166061;
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  align-items: center;
+}
+
+#Footer img{
+  width:1.5rem;
+}
+
+#Footer img:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 900px) {
+  html {
+    font-size: large;
+  }
+  .head_main h1 {
+  margin-right: 1rem;
+  }
+  .main{
+    margin: 3rem 5rem;
+  }
+}
